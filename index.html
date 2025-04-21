@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <h1>Fenêtre pop up exemple</h1>
+        </header>
+        <main>
+            <button onclick="post();">Post message</button>
+        </main>        
+    </body>
+    <script>
+        console.log(window.opener)
+        const message = "ce message";
+        function post(){
+            window.opener.postMesage({"type":"callback","callback":message},"file:///C:/Users/sacha.mailler/Desktop/GIT/schmlr_callback/main.html")
+        };
+    </script>
+</html>

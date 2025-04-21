@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <h1>fenêtre principale</h1>
+        </header>
+        <main>
+
+        </main>        
+    </body>
+    <script>
+        window.addEventListener('message',function(event){console.log("1");console.log(event.data)})
+        function open_popup(adress=""){popupReference = window.open(adress,"pop_up","width=600,height=400");};
+        open_popup("./index.html")
+    </script>
+</html>
