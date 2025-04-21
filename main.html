@@ -12,15 +12,16 @@
     </body>
     <script>
         window.addEventListener('message',function(event){
+            alert(0)
             if (event.origin === 'https://sacha37420.github.io') {
         // The data was sent from your site.
         // Data sent with postMessage is stored in event.data:
-            console.log(event.data);
+            alert(event.data);
         } else {
             // The data was NOT sent from your site!
             // Be careful! Do not use it. This else branch is
             // here just for clarity, you usually shouldn't need it.
-            console.log("Error")
+            alert("Error")
         }
         })
         function open_popup(adress=""){popupReference = window.open(adress,"pop_up","width=600,height=400");};
